@@ -1,0 +1,29 @@
+{
+  "name": "mapbox-test",
+  "main": [
+    "/dist/mapbox-test.min.js",
+    "/dist/mapbox-test.min.css"
+  ],
+  "version": "0.1.0",
+  "description": "TODO",
+  "authors": [
+    "TODO"
+  ],
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "klei.json",
+    "gulpfile.js",
+    "node_modules",
+    "bower_components",
+    "src"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14",
+    "angular-route": "~1.2.14",
+    "leaflet": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.14"
+  }
+}
