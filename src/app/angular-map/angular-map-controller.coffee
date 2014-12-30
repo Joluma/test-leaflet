@@ -1,5 +1,5 @@
 angular
-  .module 'mapboxTest.map'
+  .module 'mapboxTest.angular-map'
   .controller 'AngularMapCtrl', [
     '$scope', '$window', 'odigoSpots',
     ($scope,   $window,  odigoSpots) ->

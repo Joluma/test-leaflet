@@ -2,7 +2,7 @@ angular.module('mapboxTest', [
   'ngRoute',
   'uiGmapgoogle-maps',
   'mapboxTest.todo',
-  'mapboxTest.map',
+  'mapboxTest.leaflet',
   'mapboxTest.mapbox',
   'mapboxTest.angular-map'
 ])
@@ -12,9 +12,9 @@ angular.module('mapboxTest', [
     .when '/todo',
       controller: 'TodoCtrl'
       templateUrl: '/todo/todo.html'
-    .when '/map',
-      controller: 'MapCtrl'
-      templateUrl: '/map/map.html'
+    .when '/leaflet',
+      controller: 'LeafletCtrl'
+      templateUrl: '/leaflet/leaflet.html'
     .when '/mapbox',
       controller: 'MapboxCtrl'
       templateUrl: '/mapbox/mapbox.html'
