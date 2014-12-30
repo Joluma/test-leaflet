@@ -23,7 +23,8 @@
     "angular-route": "~1.2.14",
     "leaflet": "latest",
     "leaflet.markercluster": "latest",
-    "mapbox.js": "latest"
+    "mapbox.js": "latest",
+    "angular-google-maps": "latest"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.14"
