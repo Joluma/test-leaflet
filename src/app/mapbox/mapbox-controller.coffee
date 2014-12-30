@@ -6,7 +6,7 @@ angular
       $scope.spots = odigoSpots[0].response
 
       L.mapbox.accessToken = 'pk.eyJ1Ijoiam9sdW1hIiwiYSI6Ik1wTlBJaG8ifQ.lviHoG-NIHKfPe-up0gL4g'
-      map = L.mapbox.map('map', 'joluma.kgeiad5m').setView([35.673343,139.710388], 13)
+      map = L.mapbox.map('map', 'joluma.kgeiad5m').setView([35.673343,139.710388], 5)
 
       $scope.addSpot = ->
         # with mapbox, the coordinates must be [longitude, latitude]
@@ -31,7 +31,7 @@ angular
         markers = new L.MarkerClusterGroup()
         for spot in $scope.spots
           marker = L.marker(new L.LatLng(spot.coords.latitude, spot.coords.longitude), {
-            icon: L.mapbox.marker.icon({'marker-symbol': 'post', 'marker-color': '0044FF'})
+            icon: L.mapbox.marker.icon({'marker-symbol': 'star', 'marker-color': '0044FF'})
             title: spot.name
           })
           marker.bindPopup spot.name

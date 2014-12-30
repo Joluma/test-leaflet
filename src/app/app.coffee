@@ -17,4 +17,4 @@ angular.module('mapboxTest', [
       controller: 'MapboxCtrl'
       templateUrl: '/mapbox/mapbox.html'
     .otherwise
-      redirectTo: '/map'
+      redirectTo: '/mapbox'
