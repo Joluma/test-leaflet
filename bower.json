@@ -21,7 +21,9 @@
   "dependencies": {
     "angular": "~1.2.14",
     "angular-route": "~1.2.14",
-    "leaflet": "latest"
+    "leaflet": "latest",
+    "leaflet.markercluster": "latest",
+    "mapbox.js": "latest"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.14"

@@ -1,7 +1,8 @@
 angular.module('mapboxTest', [
   'ngRoute',
   'mapboxTest.todo',
-  'mapboxTest.map'
+  'mapboxTest.map',
+  'mapboxTest.mapbox'
 ])
 .config ($routeProvider) ->
   'use strict'
@@ -12,6 +13,8 @@ angular.module('mapboxTest', [
     .when '/map',
       controller: 'MapCtrl'
       templateUrl: '/map/map.html'
+    .when '/mapbox',
+      controller: 'MapboxCtrl'
+      templateUrl: '/mapbox/mapbox.html'
     .otherwise
       redirectTo: '/map'
-

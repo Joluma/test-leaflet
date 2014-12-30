@@ -1,7 +1,7 @@
 angular
   .module 'mapboxTest.map'
-  .controller 'MapCtrl', ($scope, $window) ->
-    'use strict'
+  .controller 'MapCtrl', ['$scope', '$window', ($scope, $window) ->
+    
     $scope.spots = []
     map = L.map('map').setView([35.673343,139.710388], 13)
 
@@ -32,7 +32,7 @@ angular
       L.marker(spot.coords).addTo(map)
       .bindPopup('Welcome to <br> '+ spot.name)
       .openPopup()
-
+]
 
 # Sugamo : 35.733492,139.739345
 # Akihabara : 35.698683,139.774219
