@@ -1,17 +1,14 @@
 angular.module('mapboxTest', [
   'ngRoute',
   'uiGmapgoogle-maps',
-  'mapboxTest.todo',
-  'mapboxTest.leaflet',
+  'mapboxTest.leaflet-module',
   'mapboxTest.mapbox',
-  'mapboxTest.angular-map'
+  'mapboxTest.angular-map',
+  'mapboxTest.google-map'
 ])
 .config ($routeProvider) ->
   'use strict'
   $routeProvider
-    .when '/todo',
-      controller: 'TodoCtrl'
-      templateUrl: '/todo/todo.html'
     .when '/leaflet',
       controller: 'LeafletCtrl'
       templateUrl: '/leaflet/leaflet.html'
@@ -21,6 +18,9 @@ angular.module('mapboxTest', [
     .when '/angular-map',
       controller: 'AngularMapCtrl'
       templateUrl: '/angular-map/angular-map.html'
+    .when '/google-map',
+      controller: 'GoogleMapCtrl'
+      templateUrl: '/google-map/google-map.html'
     .otherwise
       redirectTo: '/mapbox'
 .config (uiGmapGoogleMapApiProvider) ->

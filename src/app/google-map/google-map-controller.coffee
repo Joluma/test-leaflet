@@ -1,11 +1,11 @@
 angular
-  .module 'mapboxTest.leaflet-module'
-  .controller 'LeafletCtrl', [
+  .module 'mapboxTest.google-map'
+  .controller 'GoogleMapCtrl', [
     '$scope', '$window', 'odigoSpots',
     ($scope,   $window,   odigoSpots) ->
       $scope.spots = odigoSpots[0].response
     
-      map = L.map('map').setView([35.673343,139.710388], 5)
+      map = L.map('map-google').setView([35.673343,139.710388], 5)
 
       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
   		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

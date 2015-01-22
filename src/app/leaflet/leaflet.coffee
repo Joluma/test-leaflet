@@ -1,1 +1,1 @@
-angular.module 'mapboxTest.leaflet', []
+angular.module 'mapboxTest.leaflet-module', []

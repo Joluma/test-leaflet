@@ -1,0 +1,11 @@
+<h3>Map with leaflet</h3>
+
+<div id="map-google"></div>
+
+<form id="mapForm" ng-submit="addSpot()">
+  <input type="text" placeholder="Name of the spot..." ng-model="spotName"/>
+  <input type="text" placeholder="Give me coordinates..." ng-model="spotCoords"/>
+  <button type="submit" ng-disabled="searching || !spotName || !spotCoords">Add it</button>
+</form>
+
+<button id="show-route-btn-leaflet" ng-click="showRoute()" ng-disabled="spots.length == 0">Show Route</button>

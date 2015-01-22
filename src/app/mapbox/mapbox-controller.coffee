@@ -2,7 +2,7 @@ angular
   .module 'mapboxTest.mapbox'
   .controller 'MapboxCtrl', [
     '$scope', '$window', 'odigoSpots',
-    ($scope,   $window,  odigoSpots) ->
+    ($scope,   $window,   odigoSpots) ->
       $scope.spots = odigoSpots[0].response
 
       L.mapbox.accessToken = 'pk.eyJ1Ijoiam9sdW1hIiwiYSI6Ik1wTlBJaG8ifQ.lviHoG-NIHKfPe-up0gL4g'
